@@ -9,7 +9,7 @@ async function handler(req, res) {
         try {
             const data = req.body;
 
-            const client = await MongoClient.connect(process.env.DB_KEY);
+            const client = await MongoClient.connect(`${process.env.DB_KEY}`);
             const db = client.db();
 
             const meetupsCollection = db.collection('meetups');
