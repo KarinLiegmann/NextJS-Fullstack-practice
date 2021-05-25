@@ -74,7 +74,7 @@ export async function getStaticProps() {
                 id: fetchedMeetup._id.toString()
             }))
         },
-        revalidate: 100
+        revalidate: 1
     };
 }
 
